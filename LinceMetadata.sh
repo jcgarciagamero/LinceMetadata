@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-#Lince HASH 1.0
+#Lince Metadata 1.0
 #Author: José C. García Gamero.
 #Date: 2017-01-14
 
@@ -17,13 +17,13 @@ if [ $var1 = 1 ]; then
 	exit
 
 elif [ "$file" = "Extraer Metadatos" ]; then
-	sudo "$directorio/ExtractMetadata.sh"
+	"$directorio/ExtractMetadata.sh"
 
 elif [ "$file" = "Modificar Metadatos" ]; then
-	sudo "$directorio/ModifyMeta.sh"
+	"$directorio/ModifyMeta.sh"
 
 elif [ "$file" = "Borrar Metadatos" ]; then
-	sudo "$directorio/delMeta.sh"
+	"$directorio/delMeta.sh"
 
 fi
 exit 
