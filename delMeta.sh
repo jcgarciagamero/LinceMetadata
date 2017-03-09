@@ -1,4 +1,8 @@
-#!/bin/sh
+#!/bin/bash
+
+#Lince Metadata 1.0
+#Author: José C. García Gamero.
+#Date: 2017-01-14
 
 directorio=$(pwd)
 
@@ -12,8 +16,8 @@ var2=$(echo $?)
 
 	if [ $var2 = 1 ]; then
 	"$directorio/LinceMetadata.sh"
-	else exiftool -all= $ruta
-	exiftool $ruta > "$directorio/lincemetadata.txt"
+	else exiftool -all= "$ruta"
+	exiftool "$ruta" > "$directorio/lincemetadata.txt"
 	zenity --title="Metadatos" --text-info --filename="$directorio/lincemetadata.txt"
 	var3=$(echo $?)
 
