@@ -3,6 +3,7 @@
 #Lince Metadata 1.0
 #Author: José C. García Gamero.
 #Date: 2017-01-14
+#E-Mail: josecarlos@ims4c.com
 
 directorio=$(pwd)
 
